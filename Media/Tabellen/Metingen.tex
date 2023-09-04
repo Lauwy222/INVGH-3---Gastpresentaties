@@ -1,0 +1,69 @@
+\phantomsection
+\addcontentsline{toc}{section}{Metingen stroomverbruik}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\begin{tabular}{ll}
+\rowcolor[HTML]{4472C4} 
+\multicolumn{1}{c}{\cellcolor[HTML]{4472C4}{\color[HTML]{FFFFFF} \textbf{Spanning (V)}}} &
+  \multicolumn{1}{c}{\cellcolor[HTML]{4472C4}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Stroom\\ (A)\end{tabular}}}} \\
+\rowcolor[HTML]{FFFFFF} 
+\textit{\textbf{1}} & 0.253 \\
+\rowcolor[HTML]{D9E1F2} 
+2                   & 0.314 \\
+\rowcolor[HTML]{FFFFFF} 
+3                   & 0.362 \\
+\rowcolor[HTML]{D9E1F2} 
+4                   & 0.410 \\
+\rowcolor[HTML]{FFFFFF} 
+5                   & 0.454 \\
+\rowcolor[HTML]{D9E1F2} 
+\textit{\textbf{6}} & 0.459 \\
+\rowcolor[HTML]{FFFFFF} 
+7                   & 0.527 \\
+\rowcolor[HTML]{D9E1F2} 
+8                   & 0.564 \\
+\rowcolor[HTML]{FFFFFF} 
+9                   & 0.606 \\
+\rowcolor[HTML]{D9E1F2} 
+10                  & 0.649 \\
+\rowcolor[HTML]{FFFFFF} 
+11                  & 0.691 \\
+\rowcolor[HTML]{D9E1F2} 
+12                  & 0.747
+\end{tabular}
+\end{table}
+
+
+
+% \pgfplotstableset{% global config, for example in the preamble
+%   every head row/.style={before row=\toprule,after row=\midrule},
+%   every last row/.style={after row=\bottomrule},
+%   fixed,precision=2,
+% }
+
+
+
+
+
+
+% \pgfplotstabletypeset[
+%   columns/Spanning/.style={column name=Spanning},
+%   columns/Stroom/.style={column name=Stroom},
+% ]{/table.txt}
+
+% \begin{figure}[h!]
+% \centering
+% \begin{tikzpicture}
+% \begin{axis}[
+%     xlabel={Spanning},
+%     ylabel=Stroom,
+%     legend pos=south east,
+%     legend entries={Concrete,Linoleum},
+%     ]
+%   \addplot table [x=freq,y=Spanning] {/table.txt};
+%   \addplot table [x=freq,y=Stroom] {/table.txt};
+% \end{axis}
+% \end{tikzpicture}
+% \end{figure}
