@@ -12,13 +12,22 @@
 \usepackage{siunitx}
 \usepackage{listings}
 \usepackage{csquotes}
-
+\usepackage{titlesec}
 % %% Some packages you will need
 % \usepackage{pgfplots}
 % \usepackage{pgfplotstable}
 % \usepackage{booktabs}
 % \usepackage{array}
 % \usepackage{colortbl}
+
+
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 
 \definecolor{arduinoorange}{HTML}{FFA500}
@@ -115,14 +124,18 @@
 \begin{document}
 \include{SETTINS/front}
 \maketitle
-% \include{Chapters/Begrippenlijst}
+\include{Chapters/Begrippenlijst}
 \include{SETTINS/inhouds}
-% \include{Chapters/Inleiding}
-% \include{Chapters/Bijeenkomsten}
-% \include{Chapters/Opleiding}
-% \include{Chapters/Underglow}
-% \include{Chapters/Samenvatting}
+\include{Chapters/beeldvanhetberoepenveld}
 \include{Chapters/spreker_1}
+\include{Chapters/spreker_2}
+\include{Chapters/spreker_3}
+\include{Chapters/Bezoek_1}
+\include{Chapters/spreker_4}
+\include{Chapters/spreker_5}
+\include{Chapters/spreker_6}
+\include{Chapters/Spreker_7}
+\include{Chapters/Spreker_8}
+\include{Chapters/Spreker_9}
 \include{Chapters/Bronnenlijst}
-% \include{Media/Tabellen/Metingen}
 \end{document}
